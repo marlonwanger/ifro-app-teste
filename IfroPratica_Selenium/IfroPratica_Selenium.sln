@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IfroPratica_Selenium", "IfroPratica_Selenium\IfroPratica_Selenium.csproj", "{424D58CE-2ADD-4945-8695-8012D5A86441}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{424D58CE-2ADD-4945-8695-8012D5A86441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{424D58CE-2ADD-4945-8695-8012D5A86441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{424D58CE-2ADD-4945-8695-8012D5A86441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{424D58CE-2ADD-4945-8695-8012D5A86441}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {504A0197-FFE2-4154-8828-7FBFA7A50FEC}
+	EndGlobalSection
+EndGlobal
