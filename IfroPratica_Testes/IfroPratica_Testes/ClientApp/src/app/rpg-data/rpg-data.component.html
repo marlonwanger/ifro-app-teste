@@ -1,0 +1,32 @@
+<h1 id="tableLabel">Rpg Characters</h1>
+
+<p>Aplication for testings.</p>
+
+<p *ngIf="!rpgChars?.length"><em>Loading...</em></p>
+
+<a class="btn btn-secondary" style="margin-right: 10px" [routerLink]="['/rpg-list/insert']">New Character</a>
+
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="rpgChars.length">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Class</th>
+      <th>HP</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let rpgChar of rpgChars">
+      <td>{{ rpgChar.id }}</td>
+      <td>{{ rpgChar.name }}</td>
+      <td>{{ rpgChar.rpgClass }}</td>
+      <td>{{ rpgChar.hitPoints }}</td>
+      <td>
+        <a class="btn btn-secondary" style="margin-right: 10px" [routerLink]="['/rpg-list/update', rpgChar.id]">Edit</a>
+        <a class="btn btn-danger" (click)="Delete(rpgChar.id)">Delete</a>
+      </td>
+    </tr>
+  </tbody>
+</table>

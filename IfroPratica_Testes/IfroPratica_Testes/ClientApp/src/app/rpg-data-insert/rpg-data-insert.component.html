@@ -1,0 +1,37 @@
+<h1 id="tableLabel">Insert new Characters</h1>
+
+<p>Aplication for testings.</p>
+
+<a class="btn btn-secondary" style="margin-right: 10px" [routerLink]="['/rpg-list']">Voltar</a>
+
+<br />
+<br />
+
+<div class="card">
+  <div class="card-body">
+    {{ model | json }}
+    <form #heroForm="ngForm" (ngSubmit)="onSubmit()">
+
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" required #name="ngModel" [(ngModel)]="model.name" name="name" id="name" aria-describedby="name">
+        <div style="margin-top: 10px" [hidden]="name.valid || name.pristine"
+             class="alert alert-danger">
+          Name is required
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="class" class="form-label">Class</label>
+        <input type="text" class="form-control" [(ngModel)]="model.rpgClass" name="rpgClass" id="class">
+      </div>
+
+      <div class="mb-3">
+        <label for="hp" class="form-label">HP</label>
+        <input type="text" class="form-control" [(ngModel)]="model.hitPoints" name="hitPoints" id="hp">
+      </div>
+
+      <button type="submit"[disabled]="!heroForm.form.valid" (click)="Submit();" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
